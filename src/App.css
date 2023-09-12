@@ -1,38 +1,160 @@
-.App {
-  text-align: center;
+/* Import de la fuente "Roboto" */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* Estilos generales del cuerpo de la página */
+body {
+    font-family: 'Roboto';
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Establece el alto mínimo al 100% del viewport */
+    margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header, main, footer {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Estilos para el encabezado */
+header {
+    background-color: #fff;
+    font-family: 'Roboto'; /* Usar la fuente Roboto */
+    color: #ff0000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+header img {
+    max-width: 100%;
+    height: auto;
+    margin-right: 20px;
+    margin-bottom: 10px; 
 }
 
-.App-link {
-  color: #61dafb;
+header h1 {
+    font-size: 35px;
+    margin: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Estilos para el contenido principal */
+main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f1f1f1;
+    color: #000000;
 }
+
+/* Estilos para el contenido dentro del 'main' */
+.content {
+    text-align: center;
+    font-size: 18px;
+}
+
+.page {
+    display: none;
+    text-align: center;
+}
+
+.page.active {
+    display: block;
+}
+
+/* Estilos generales para las imágenes */
+img {
+    max-width: 50%;
+    height: auto;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+
+/* Estilos para el carrusel y su contenedor */
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    overflow: hidden;
+    position: relative;
+}
+
+.gallery {
+    max-width: 1000px;
+    width: 100%;
+    height: auto;
+    display: flex; 
+    align-items: center;
+    position: relative;
+}
+
+/* Estilos para las imágenes en el carrusel */
+.gallery img {
+    width: 85%; 
+    height: 100%; 
+    max-width: 100%; 
+    max-height: 100%; 
+    display: block; /* Cambiar a 'block' para evitar problemas de alineación */
+    margin: 0 auto; /* Centrar horizontalmente en el contenedor */
+    background-color: #252a2e;
+}
+
+/* Estilos para las flechas de navegación */
+.nav-button {
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: 'Roboto';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); /* Centrar verticalmente */
+}
+
+#prevButton {
+    left: 0; 
+    max-width: 50%; 
+}
+
+#nextButton {
+    right: 0; 
+    max-width: 50%;
+}
+
+/* Estilos para los botones generales */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin: 20px;
+    border-radius: 10px;
+    font-family: 'Roboto';
+}
+
+/* Estilos para el hover de los botones */
+button:hover {
+    background-color: #000000;
+}
+
+/* Estilos para el pie de página */
+footer {
+    text-align: center;
+    background-color: #fff;
+    color: #000000;
+    padding: 10px 0;
+    font-family: 'Roboto';
+}
+
+
