@@ -5,11 +5,11 @@ import Footer from './components/Footer'; // Importa el Footer
 import MainPage from './components/MainPage';
 import CarouselPage from './components/CarouselPage';
 import './App.css'; // Importa los estilos de App.css
- 
+
 const App: React.FC = () => {
   return (
     <Router>
-      <Header /> 
+      <Header />
       <Switch>
         <Route path="/carousel">
           <CarouselPage />
@@ -18,7 +18,7 @@ const App: React.FC = () => {
           <MainPage />
         </Route>
       </Switch>
-      <Footer /> 
+      <Footer />
     </Router>
   );
 };

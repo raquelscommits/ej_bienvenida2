@@ -33,7 +33,7 @@ header img {
     max-width: 100%;
     height: auto;
     margin-right: 20px;
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
 }
 
 header h1 {
@@ -77,29 +77,31 @@ img {
 
 /* Estilos para el carrusel y su contenedor */
 .gallery-container {
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; 
+    height: 100vh;
     overflow: hidden;
     position: relative;
+    background-color: #f1f1f1;
 }
 
 .gallery {
     max-width: 1000px;
     width: 100%;
     height: auto;
-    display: flex; 
+    display: flex;
     align-items: center;
     position: relative;
 }
 
 /* Estilos para las imágenes en el carrusel */
 .gallery img {
-    width: 85%; 
-    height: 100%; 
-    max-width: 100%; 
-    max-height: 100%; 
+    width: 70%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
     display: block; /* Cambiar a 'block' para evitar problemas de alineación */
     margin: 0 auto; /* Centrar horizontalmente en el contenedor */
     background-color: #252a2e;
@@ -107,7 +109,7 @@ img {
 
 /* Estilos para las flechas de navegación */
 .nav-button {
-    font-size: 24px;
+    font-size: 20px;
     background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
     border: none;
@@ -120,13 +122,17 @@ img {
     transform: translateY(-50%); /* Centrar verticalmente */
 }
 
+.nav-button:hover {
+    background-color: #ff0000;
+}
+
 #prevButton {
-    left: 0; 
-    max-width: 50%; 
+    left: 0;
+    max-width: 50%;
 }
 
 #nextButton {
-    right: 0; 
+    right: 0;
     max-width: 50%;
 }
 
